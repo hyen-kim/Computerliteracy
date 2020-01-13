@@ -1,0 +1,14 @@
+* 폼 보이기 프로시저
+판매실적.Show
+
+* 폼 초기화 프로시저 -> Initialize
+cmb대리점명.RowSource = "I6:I10"
+txt입력시간 = Time			<-- 입력시간에 현재시간
+cmb담당지역.AddItem "서울"		<-- 담당지역 목록 
+cmb담당지역.AddItem "경기"
+cmb담당지역.AddItem "대구"
+cmb담당지역.AddItem "부산"
+cmb담당지역.AddItem "제주"
+
+* 폼 종료 프로시저
+Unload Me
